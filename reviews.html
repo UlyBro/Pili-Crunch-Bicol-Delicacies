@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pili Crunch - Customer Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">Pili<span>Crunch</span></div>
+            </a>
+
+             <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i> 
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </ul>
+            </nav>
+
+            <form class="search-form">
+                <input type="search" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i> 
+                </button>
+            </form>    
+        </div>
+    </header>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">We Value Your Feedback</div>
+                <h2 class="section-title">Submit a Pili Crunch Review</h2>
+                <p class="section-desc">Help us share the delightful flavor of Bicol's best to the world.</p>
+            </div>
+            
+            <div class="testimonial-form-wrapper">
+                <h3 class="form-heading">Share Your Pili Crunch Experience!</h3>
+                <form id="testimonial-form" action="submit_testimonial.php" method="POST"> 
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email (For Verification)" required>
+                    <select name="rating" required>
+                        <option value="">Rate Our Product...</option>
+                        <option value="5">★★★★★ Excellent</option>
+                        <option value="4">★★★★☆ Very Good</option>
+                        <option value="3">★★★☆☆ Good</option>
+                        <option value="2">★★☆☆☆ Fair</option>
+                        <option value="1">★☆☆☆☆ Poor</option>
+                    </select>
+                    <textarea name="comment" rows="4" placeholder="Your delightful feedback..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <p class="form-note">Your email is only used to verify your previous order with us.</p>
+                </form>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body> 
+</html>
